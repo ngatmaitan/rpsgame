@@ -2,14 +2,23 @@
 	<head></head>
 
 	<body>
+		<form>
+		  <input type="number" id="minutes" placeholder="Minutes"><br>
+		  <input type="number" id="seconds" placeholder="Seconds"><br><br>
+		  <input type="button" id="submit" value="Start Countdown">
+		</form>
+		<span id="time">00:00</span><br/>
+		<span id="warning" style="display:none">10 seconds left!</span><br/>
+		<span id="winner"></span><br/><br/><br/>
+
 		<button id="rock" type="button" value="0" >Rock</button>
 		<button id="paper" type="button" value="1" >Paper</button>
 		<button id="scissors" type="button" value="2" >Scissors</button>
 		<br/>
 		User chose: <span id="userchoice"></span><br/>
-		Bot chose: <span id="botchoice"></span><br/>
-		<span id="result"></span><br/><br/>
+		Bot chose: <span id="botchoice"></span><br/><br/>
 		User has won <span id="userwins">0</span> game(s).<br/>
-		Bot has won <span id="botwins">0</span> game(s).
+		Bot has won <span id="botwins">0</span> game(s).<br/>
+		There have been <span id="ties">0</span> tie game(s).
 	</body>
 </html>
