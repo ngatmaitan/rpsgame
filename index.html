@@ -3,22 +3,31 @@
 
 	<body>
 		<form>
-		  <input type="number" id="minutes" placeholder="Minutes"><br>
-		  <input type="number" id="seconds" placeholder="Seconds"><br><br>
-		  <input type="button" id="submit" value="Start Countdown">
+		  <input type="number" id="mns" name="mns" value="0" maxlength="3" placeholder="Minutes" />
+		  <input type="number" id="scs" name="scs" value="0" maxlength="2" placeholder="Seconds" />
+  		<br/>
+		  <input type="button" id="btnct" value="Add / Start" />
+		  <input type="button" id="reset" value="reset" />
 		</form>
-		<span id="time">00:00</span><br/>
-		<span id="warning" style="display:none">10 seconds left!</span><br/>
-		<span id="winner"></span><br/><br/><br/>
-
-		<button id="rock" type="button" value="0" >Rock</button>
-		<button id="paper" type="button" value="1" >Paper</button>
-		<button id="scissors" type="button" value="2" >Scissors</button>
+		Countdown Timer: &nbsp; <span id="showmns">00</span>:<span id="showscs">00</span>
 		<br/>
-		User chose: <span id="userchoice"></span><br/>
-		Bot chose: <span id="botchoice"></span><br/><br/>
-		User has won <span id="userwins">0</span> game(s).<br/>
-		Bot has won <span id="botwins">0</span> game(s).<br/>
-		There have been <span id="ties">0</span> tie game(s).
+		<br/>
+		<span id="warning" style="display:none">10 seconds left!</span>
+		<br/>
+		<span id="winner"></span>
+		<br/>
+		<br/>
+		<br/>
+
+		<button id="rock" type="button" value="0">Rock</button>
+		<button id="paper" type="button" value="1">Paper</button>
+		<button id="scissors" type="button" value="2">Scissors</button>
+		<br/> User chose: <span id="userchoice"></span>
+		<br/> Bot chose: <span id="botchoice"></span>
+		<br/>
+		<br/> User has won <span id="userwins">0</span> game(s).
+		<br/> Bot has won <span id="botwins">0</span> game(s).
+		<br/> There have been <span id="ties">0</span> tie game(s).
+
 	</body>
 </html>
