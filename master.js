@@ -1,3 +1,5 @@
+//most things timer from http://jsfiddle.net/alnitak/aBWce/
+
 var mns = document.getElementById('mns');
 var scs = document.getElementById('scs');
 var btcnt = document.getElementById('btnct');
