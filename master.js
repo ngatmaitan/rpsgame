@@ -12,7 +12,6 @@ var userchoice;
 var userwins = 0;
 var botwins = 0;
 var ties = 0;
-var yourUl = document.getElementById("yourUlId");
 
 document.getElementById("rock").addEventListener("click", function() {
   play(this);
@@ -34,10 +33,14 @@ function show() {
   var s = count % 60;
   var m = Math.floor(count / 60);
   if (m === 0 && s === 10) {
-    document.getElementById("warning").style.display = '';
+    document.getElementById("warning").classList.remove('hidden');
   } else if (m === 0 && s === 7) {
-    document.getElementById("warning").style.display = 'none';
+    document.getElementById("warning").classList.add('hidden');
   } else if (m === 0 && s === 0) {
+    document.getElementById("rock").classList.add('hidden');
+    document.getElementById("paper").classList.add('hidden');
+    document.getElementById("scissors").classList.add('hidden');
+    document.getElementById("winner").classList.remove('hidden');
     if (userwins > botwins) {
       document.getElementById("winner").innerHTML = "user won.";
     } else if (userwins < botwins) {
@@ -76,15 +79,24 @@ function setTimer() {
 }
 
 btcnt.addEventListener('click', function() {
+  document.getElementById("rock").classList.remove('hidden');
+  document.getElementById("paper").classList.remove('hidden');
+  document.getElementById("scissors").classList.remove('hidden');
   setTimer();
 });
 
 reset.addEventListener('click', function() {
+  document.getElementById("rock").classList.remove('hidden');
+  document.getElementById("paper").classList.remove('hidden');
+  document.getElementById("scissors").classList.remove('hidden');
+  document.getElementById("winner").classList.add('hidden');
+  userwins = 0;
+  botwins = 0;
+  ties = 0;
+  count = 0;
   document.getElementById("userwins").innerHTML = userwins;
   document.getElementById("botwins").innerHTML = botwins;
   document.getElementById("ties").innerHTML = ties;
-  document.getElementById("winner").innerHTML = "";
-  userwins, botwins, ties, count = 0;
   clearTimeout(t);
   setTimer();
 });
