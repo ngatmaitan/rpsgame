@@ -10,28 +10,32 @@
 			<h1>Rock, Paper, Scissors</h1>
 			<p class="instructions">The rules are simple: rock beats scissors, scissors beats paper and paper beats rock.  Test your luck and play an unlimited amount of games against a computer in a time frame of your choosing.</p>
 		</div> <!-- /header -->
-		<form>
-		  <input type="number" id="mns" name="mns" value="0" maxlength="3" placeholder="Minutes" />
-		  <input type="number" id="scs" name="scs" value="0" maxlength="2" placeholder="Seconds" />
-		  <br/>
-		  <input type="button" id="btnct" value="Start" />
-		  <input type="button" id="reset" value="reset" />
-		</form>Countdown Timer: &nbsp; <span id="showmns">00</span>:<span id="showscs">00</span>
-		<br/>
-		<br/>
-		<span id="warning" class="hidden">10 seconds left!</span>
-		<br/>
-		<span id="winner"></span>
-		<br/>
-		<br/>
-		<br/>
+		<div class="timer">
+			<form>
+				Enter time to play:
+				<input type="number" id="mns" name="mns" value="0" maxlength="3" placeholder="Minutes"> Min
+				<input type="number" id="scs" name="scs" value="0" maxlength="2" placeholder="Seconds" /> Sec</br>
+		  		<input type="button" id="btnct" value="START" />
+		  		<input type="button" id="reset" value="RESET ALL" />
+			</form>
+			<div class="countdown">
+				<span id="showmns">00</span>:<span id="showscs">00</span></br>
+				<span id="warning" class="hidden">10 seconds left!</span>
+			</div>
+		</div>
+		<div class="winner">
+			<span id="winner"></span>
+		</div>
+		<div class="choices">
+			<span id="userchoice"></span>
+			<span id="botchoice"></span>
+		</div>
+		<div class="gamebuttons">
+			<button id="rock" type="button" value="0" class="hidden">Rock</button>
+			<button id="paper" type="button" value="1" class="hidden">Paper</button>
+			<button id="scissors" type="button" value="2" class="hidden">Scissors</button>
+		</div>
 
-		<button id="rock" type="button" value="0" class="hidden">Rock</button>
-		<button id="paper" type="button" value="1" class="hidden">Paper</button>
-		<button id="scissors" type="button" value="2" class="hidden">Scissors</button>
-		<br/> User chose: <span id="userchoice"></span>
-		<br/> Bot chose: <span id="botchoice"></span>
-		<br/>
 		<br/> User has won <span id="userwins">0</span> game(s).
 		<br/> Bot has won <span id="botwins">0</span> game(s).
 		<br/> There have been <span id="ties">0</span> tie game(s).
