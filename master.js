@@ -40,6 +40,7 @@ window.onload = function(){
     document.getElementById("scissors").classList.remove('hidden');
     document.getElementById("choices").classList.remove('hidden');
     document.getElementById("score").classList.remove('hidden');
+    document.getElementById("countdown").classList.remove('hidden');
     document.getElementById("winner").classList.add('hidden');
   }
 
@@ -56,13 +57,14 @@ window.onload = function(){
       document.getElementById("scissors").classList.add('hidden');
       document.getElementById("choices").classList.add('hidden');
       document.getElementById("winner").classList.remove('hidden');
+      document.getElementById("countdown").classList.add('hidden');
       document.getElementById("btnct").disabled = false;
       if (userwins > botwins) {
-        document.getElementById("winner").innerHTML = "user won.";
+        document.getElementById("winner").innerHTML = "Congratulations, you won!";
       } else if (userwins < botwins) {
-        document.getElementById("winner").innerHTML = "bot won.";
+        document.getElementById("winner").innerHTML = "Sorry, Computer won.";
       } else {
-        document.getElementById("winner").innerHTML = "it's a tie!";
+        document.getElementById("winner").innerHTML = "Wow, it's a tie!";
       }
     }
     showmns.innerHTML = pad2(m);

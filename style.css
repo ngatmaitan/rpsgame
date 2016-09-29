@@ -1,9 +1,8 @@
 @import "https://fonts.googleapis.com/css?family=Amatic+SC:700|Josefin+Sans";
 body {
   font-family: Josefin Sans, sans-serif;
-  background: #ffffff url("background.png") no-repeat center;
-  background-position: -43px -59px;
-  background-size: 150% 176%;
+  background: #ffffff url("background.jpg") no-repeat center;
+  background-size: cover;
   background-attachment: fixed; }
 
 h1, h2 {
@@ -19,12 +18,9 @@ h2 {
   text-align: center; }
   .header .instructions {
     text-align: left;
-    line-height: 25px;
-    margin-left: 23px;
-    margin-top: 5px; }
+    line-height: 20px; }
 
 .timer {
-  margin-top: 23px;
   text-align: center; }
   .timer input {
     border: 1px solid black;
@@ -42,11 +38,11 @@ h2 {
       width: 8em;
       padding: 13px 0;
       font-size: 1em;
-      background-color: white; }
-  .timer .countdown {
+      background-color: transparent; }
+  .timer #countdown {
     font-size: 2em;
     margin-top: -12px; }
-    .timer .countdown #warning {
+    .timer #countdown #warning {
       color: red; }
 
 .winner {
@@ -57,6 +53,9 @@ h2 {
   border: 5px solid black;
   width: 60px;
   height: 70px; }
+#choices table {
+  margin-left: 30px;
+  margin-top: -8px; }
 
 .gamebuttons button {
   width: 60px;
@@ -74,9 +73,18 @@ h2 {
 
 #score {
   text-align: center; }
+  #score #warning {
+    color: red;
+    font-size: 2em;
+    margin-top: -12px; }
+  #score table {
+    margin-left: 10px; }
 
 table {
-  width: 98vw; }
+  width: 90vw; }
+
+.winner {
+  margin-top: 1em; }
 
 .hidden {
   display: none; }

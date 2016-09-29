@@ -10,6 +10,18 @@
 			<h1>Rock, Paper, Scissors</h1>
 			<p class="instructions">The rules are simple: rock beats scissors, scissors beats paper and paper beats rock.  Test your luck and play an unlimited amount of games against a computer in a time frame of your choosing.</p>
 		</div> <!-- /header -->
+		<div class="timer">
+			<form>
+				Enter time to play:
+				<input type="number" id="mns" name="mns" value="0" maxlength="3" placeholder="Minutes"> Min
+				<input type="number" id="scs" name="scs" value="0" maxlength="2" placeholder="Seconds" /> Sec</br>
+		  		<input type="button" id="btnct" value="START" />
+		  		<input type="button" id="reset" value="RESET ALL" />
+			</form>
+			<div id="countdown" class="hidden">
+				<span id="showmns">00</span>:<span id="showscs">00</span></br>
+			</div>
+		</div>
 		<div id="choices" class="hidden">
 			<table>
 				<tr>
@@ -21,7 +33,6 @@
 					<th><span id="botchoice"></span></th>
 				</tr>
 			</table>
-
 		</div>
 		<div class="gamebuttons">
 			<button id="rock" type="button" value="0" class="hidden"></button>
@@ -29,6 +40,7 @@
 			<button id="scissors" type="button" value="2" class="hidden"></button>
 		</div>
 		<div id="score" class="hidden">
+			<span id="warning" class="hidden">10 seconds left!</span>
 			<h2>SCORE</h2>
 			<table>
 				<tr>
@@ -42,19 +54,6 @@
 					<th><span id="ties">0</span></th>	
 				</tr>
 			</table>
-		</div>
-		<div class="timer">
-			<form>
-				Enter time to play:
-				<input type="number" id="mns" name="mns" value="0" maxlength="3" placeholder="Minutes"> Min
-				<input type="number" id="scs" name="scs" value="0" maxlength="2" placeholder="Seconds" /> Sec</br>
-		  		<input type="button" id="btnct" value="START" />
-		  		<input type="button" id="reset" value="RESET ALL" />
-			</form>
-			<div class="countdown">
-				<span id="showmns">00</span>:<span id="showscs">00</span></br>
-				<span id="warning" class="hidden">10 seconds left!</span>
-			</div>
 		</div>
 		<div class="winner">
 			<span id="winner"></span>

@@ -5,9 +5,8 @@ $josefin-sans: Josefin Sans, sans-serif;
 
 body{
 	font-family: $josefin-sans;
-	background: #ffffff url('background.png') no-repeat center;
-	background-position: -43px -59px;
-  	background-size: 150% 176%;
+	background: #ffffff url('background.jpg') no-repeat center;
+  	background-size: cover;
   	background-attachment: fixed;
 }
 
@@ -27,14 +26,11 @@ h2{
 
 	.instructions{
 		text-align: left;
-		line-height: 25px;
-		margin-left: 23px;
-		margin-top: 5px;
+		line-height: 20px;
 	}
 }
 
 .timer{
-	margin-top: 23px;
 	text-align: center;
 
 	input {
@@ -58,11 +54,11 @@ h2{
 			width: 8em;
 			padding: 13px 0;
 			font-size: 1em;
-			background-color: white;
+			background-color: transparent;
 		}
 	}
 
-	.countdown{
+	#countdown{
 		font-size: 2em;
 		margin-top: -12px;
 		#warning{
@@ -77,11 +73,15 @@ h2{
 }
 
 #choices{
-
 	img{
 		border: 5px solid black;
 		width: 60px;
 		height: 70px;
+	}
+
+	table{
+		margin-left: 30px;
+		margin-top: -8px;
 	}
 }
 
@@ -107,10 +107,22 @@ h2{
 
 #score{
 	text-align:center;
+	#warning{
+		color: red;
+		font-size: 2em;
+		margin-top: -12px;
+	}
+	table{
+		margin-left: 10px;
+	}
 }
 
 table{
-	width: 98vw;
+	width: 90vw;
+}
+
+.winner{
+	margin-top: 1em;
 }
 
 .hidden{
