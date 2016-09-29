@@ -1,4 +1,5 @@
 //most things timer from http://jsfiddle.net/alnitak/aBWce/
+// RPS logic http://stackoverflow.com/questions/9553058/scalable-solution-for-rock-paper-scissor
 
 window.onload = function(){
 
