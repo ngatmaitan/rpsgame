@@ -129,9 +129,9 @@ window.onload = function(){
     var botchoice = Math.floor(Math.random() * 3);
     displayBotChoice(botchoice);
     //document.getElementById("userchoice").innerHTML = userinput.id;
-    if (userinput == 0) {
+    if (userinput.value == 0) {
       document.getElementById("userchoice").innerHTML = '<img src="rock.png">';
-    } else if (botchoice == 1) {
+    } else if (userinput.value == 1) {
       document.getElementById("userchoice").innerHTML = '<img src="paper.png">';
     } else {
       document.getElementById("userchoice").innerHTML = '<img src="scissors.png">';
