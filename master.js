@@ -1,7 +1,7 @@
 //most things timer from http://jsfiddle.net/alnitak/aBWce/
-console.log("in file1");
+
 window.onload = function(){
-  console.log("in file2");
+
   var mns = document.getElementById('mns');
   var scs = document.getElementById('scs');
   var btcnt = document.getElementById('btnct');
@@ -37,6 +37,8 @@ window.onload = function(){
     document.getElementById("rock").classList.remove('hidden');
     document.getElementById("paper").classList.remove('hidden');
     document.getElementById("scissors").classList.remove('hidden');
+    document.getElementById("choices").classList.remove('hidden');
+    document.getElementById("score").classList.remove('hidden');
     document.getElementById("winner").classList.add('hidden');
   }
 
@@ -51,6 +53,7 @@ window.onload = function(){
       document.getElementById("rock").classList.add('hidden');
       document.getElementById("paper").classList.add('hidden');
       document.getElementById("scissors").classList.add('hidden');
+      document.getElementById("choices").classList.add('hidden');
       document.getElementById("winner").classList.remove('hidden');
       document.getElementById("btnct").disabled = false;
       if (userwins > botwins) {
@@ -111,18 +114,25 @@ window.onload = function(){
 
   function displayBotChoice(botchoice) {
     if (botchoice == 0) {
-      document.getElementById("botchoice").innerHTML = "Rock";
+      document.getElementById("botchoice").innerHTML = '<img src="rock.png">';
     } else if (botchoice == 1) {
-      document.getElementById("botchoice").innerHTML = "Paper";
+      document.getElementById("botchoice").innerHTML = '<img src="paper.png">';
     } else {
-      document.getElementById("botchoice").innerHTML = "Scissors";
+      document.getElementById("botchoice").innerHTML = '<img src="scissors.png">';
     }
   }
 
   function play(userinput) {
     var botchoice = Math.floor(Math.random() * 3);
     displayBotChoice(botchoice);
-    document.getElementById("userchoice").innerHTML = userinput.innerHTML;
+    //document.getElementById("userchoice").innerHTML = userinput.id;
+    if (userinput == 0) {
+      document.getElementById("userchoice").innerHTML = '<img src="rock.png">';
+    } else if (botchoice == 1) {
+      document.getElementById("userchoice").innerHTML = '<img src="paper.png">';
+    } else {
+      document.getElementById("userchoice").innerHTML = '<img src="scissors.png">';
+    }
 
     result = (3 + userinput.value - botchoice) % 3;
     if (result == 1) {

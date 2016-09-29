@@ -11,10 +11,15 @@ body{
   	background-attachment: fixed;
 }
 
-h1 {
+h1, h2 {
 	font-family: $amatic-sc;
 	font-size: 3em;
 	margin-bottom: 0;
+}
+
+h2{
+	font-size: 2em;
+	margin-top: 0;
 }
 
 .header{
@@ -53,6 +58,7 @@ h1 {
 			width: 8em;
 			padding: 13px 0;
 			font-size: 1em;
+			background-color: white;
 		}
 	}
 
@@ -68,6 +74,43 @@ h1 {
 .winner{
 	text-align: center;
 	font-size: 24px;
+}
+
+#choices{
+
+	img{
+		border: 5px solid black;
+		width: 60px;
+		height: 70px;
+	}
+}
+
+.gamebuttons{
+	button{
+		width: 60px;
+		height: 70px;
+		background-size: 60px 70px;
+		background-color: transparent;
+		border: none;
+		margin-left: 30px;
+	}
+	#rock{
+		background-image: url(rock.png);
+	}
+	#paper{
+		background-image: url(paper.png);
+	}
+	#scissors{
+		background-image: url(scissors.png);
+	}
+}
+
+#score{
+	text-align:center;
+}
+
+table{
+	width: 98vw;
 }
 
 .hidden{

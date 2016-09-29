@@ -10,6 +10,39 @@
 			<h1>Rock, Paper, Scissors</h1>
 			<p class="instructions">The rules are simple: rock beats scissors, scissors beats paper and paper beats rock.  Test your luck and play an unlimited amount of games against a computer in a time frame of your choosing.</p>
 		</div> <!-- /header -->
+		<div id="choices" class="hidden">
+			<table>
+				<tr>
+					<th>Your Choice</th>
+					<th>Computer's Choice</th>
+				</tr>
+				<tr>
+					<th><span id="userchoice"></span></th>
+					<th><span id="botchoice"></span></th>
+				</tr>
+			</table>
+
+		</div>
+		<div class="gamebuttons">
+			<button id="rock" type="button" value="0" class="hidden"></button>
+			<button id="paper" type="button" value="1" class="hidden"></button>
+			<button id="scissors" type="button" value="2" class="hidden"></button>
+		</div>
+		<div id="score" class="hidden">
+			<h2>SCORE</h2>
+			<table>
+				<tr>
+					<th>You</th>
+					<th>Computer</th>
+					<th>Ties</th>
+				</tr>
+				<tr>
+					<th><span id="userwins">0</span></th>
+					<th><span id="botwins">0</span></th>
+					<th><span id="ties">0</span></th>	
+				</tr>
+			</table>
+		</div>
 		<div class="timer">
 			<form>
 				Enter time to play:
@@ -26,18 +59,5 @@
 		<div class="winner">
 			<span id="winner"></span>
 		</div>
-		<div class="choices">
-			<span id="userchoice"></span>
-			<span id="botchoice"></span>
-		</div>
-		<div class="gamebuttons">
-			<button id="rock" type="button" value="0" class="hidden">Rock</button>
-			<button id="paper" type="button" value="1" class="hidden">Paper</button>
-			<button id="scissors" type="button" value="2" class="hidden">Scissors</button>
-		</div>
-
-		<br/> User has won <span id="userwins">0</span> game(s).
-		<br/> Bot has won <span id="botwins">0</span> game(s).
-		<br/> There have been <span id="ties">0</span> tie game(s).
 	</body>
 </html>
