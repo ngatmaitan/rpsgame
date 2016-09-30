@@ -25,6 +25,9 @@ h1, h2 {
 h2{
 	font-size: 2em;
 	margin-top: 0;
+	@media (min-width: 1024px){
+		font-size: 3em;
+	}
 }
 
 .header{
@@ -44,6 +47,18 @@ h2{
 		}
 		@media (min-width: 1280px){
 			padding: 0 24em;
+		}
+		@media (min-width: 1440px){
+			padding: 0 31em;
+		}
+		@media (min-width: 1600px){
+			padding: 0 35em;
+		}
+		@media (min-width: 1680px){
+			padding: 0 39em;
+		}
+		@media (min-width: 1920px){
+			padding: 0 44em;
 		}
 	}
 }
@@ -104,10 +119,10 @@ h2{
 			img{
 				width: 60px;
 				height: 70px;
-			}
-			@media (min-width: 1024px){
-				width: 100px;
-				height: 100px;
+				@media (min-width: 1024px){
+					width: 100px;
+					height: 100px;
+				}
 			}
 		}
 		@media (min-width: 480px){
@@ -120,7 +135,19 @@ h2{
 			margin-left: 23em;
 		}
 		@media (min-width: 1280px){
-			margin-left: 33em;
+			margin-left: 30em;
+		}
+		@media (min-width: 1440px){
+			margin-left: 35em;
+		}
+		@media (min-width: 1600px){
+			margin-left: 40em;
+		}
+		@media (min-width: 1680px){
+			margin-left: 43em;
+		}
+		@media (min-width: 1920px){
+			margin-left: 49em;
 		}
 	}
 }
@@ -169,8 +196,20 @@ h2{
 		@media (min-width: 1024px){
 			margin-left: 23em;
 		}
-		@media (min-width: 1024px){
-			margin-left: 31em;
+		@media (min-width: 1280px){
+			margin-left: 29em;
+		}
+		@media (min-width: 1440px){
+			margin-left: 34em;
+		}
+		@media (min-width: 1600px){
+			margin-left: 39em;
+		}
+		@media (min-width: 1680px){
+			margin-left: 41em;
+		}
+		@media (min-width: 1920px){
+			margin-left: 49em;
 		}
 	}
 }

@@ -19,6 +19,9 @@ h1, h2 {
 h2 {
   font-size: 2em;
   margin-top: 0; }
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: 3em; } }
 
 .header {
   text-align: center; }
@@ -37,6 +40,18 @@ h2 {
     @media (min-width: 1280px) {
       .header .instructions {
         padding: 0 24em; } }
+    @media (min-width: 1440px) {
+      .header .instructions {
+        padding: 0 31em; } }
+    @media (min-width: 1600px) {
+      .header .instructions {
+        padding: 0 35em; } }
+    @media (min-width: 1680px) {
+      .header .instructions {
+        padding: 0 39em; } }
+    @media (min-width: 1920px) {
+      .header .instructions {
+        padding: 0 44em; } }
 
 .timer {
   text-align: center; }
@@ -77,10 +92,10 @@ h2 {
   #choices table tr img {
     width: 60px;
     height: 70px; }
-  @media (min-width: 1024px) {
-    #choices table tr {
-      width: 100px;
-      height: 100px; } }
+    @media (min-width: 1024px) {
+      #choices table tr img {
+        width: 100px;
+        height: 100px; } }
   @media (min-width: 480px) {
     #choices table {
       margin-left: 8em; } }
@@ -92,7 +107,19 @@ h2 {
       margin-left: 23em; } }
   @media (min-width: 1280px) {
     #choices table {
-      margin-left: 33em; } }
+      margin-left: 30em; } }
+  @media (min-width: 1440px) {
+    #choices table {
+      margin-left: 35em; } }
+  @media (min-width: 1600px) {
+    #choices table {
+      margin-left: 40em; } }
+  @media (min-width: 1680px) {
+    #choices table {
+      margin-left: 43em; } }
+  @media (min-width: 1920px) {
+    #choices table {
+      margin-left: 49em; } }
 
 .gamebuttons {
   text-align: center; }
@@ -132,9 +159,21 @@ h2 {
     @media (min-width: 1024px) {
       #score table {
         margin-left: 23em; } }
-    @media (min-width: 1024px) {
+    @media (min-width: 1280px) {
       #score table {
-        margin-left: 31em; } }
+        margin-left: 29em; } }
+    @media (min-width: 1440px) {
+      #score table {
+        margin-left: 34em; } }
+    @media (min-width: 1600px) {
+      #score table {
+        margin-left: 39em; } }
+    @media (min-width: 1680px) {
+      #score table {
+        margin-left: 41em; } }
+    @media (min-width: 1920px) {
+      #score table {
+        margin-left: 49em; } }
 
 table {
   width: 83vw; }
