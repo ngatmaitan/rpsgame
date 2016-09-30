@@ -10,10 +10,9 @@ body{
   	background-attachment: fixed;
 }
 
-h1, h2 {
+h1{
 	font-family: $amatic-sc;
 	font-size: 3em;
-	margin-bottom: 0;
 	@media(min-width: 540){
 		font-size: 4em;
 	}
@@ -23,8 +22,10 @@ h1, h2 {
 }
 
 h2{
+	font-family: $amatic-sc;
 	font-size: 2em;
 	margin-top: 0;
+	margin-bottom: 0;
 	@media (min-width: 1024px){
 		font-size: 3em;
 	}
