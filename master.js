@@ -60,11 +60,11 @@ window.onload = function(){
       document.getElementById("countdown").classList.add('hidden');
       document.getElementById("btnct").disabled = false;
       if (userwins > botwins) {
-        document.getElementById("winner").innerHTML = "Congratulations, you won!";
+        document.getElementById("winner").innerHTML = 'Congratulations, you won!';
       } else if (userwins < botwins) {
-        document.getElementById("winner").innerHTML = "Sorry, Computer won.";
+        document.getElementById("winner").innerHTML = 'Sorry, Computer won.';
       } else {
-        document.getElementById("winner").innerHTML = "Wow, it's a tie!";
+        document.getElementById("winner").innerHTML = 'Wow, it is a tie!';
       }
     }
     showmns.innerHTML = pad2(m);
@@ -103,6 +103,8 @@ window.onload = function(){
   });
 
   reset.addEventListener('click', function() {
+    document.getElementById("userchoice").innerHTML = '<img src="background.jpg">';
+    document.getElementById("botchoice").innerHTML = '<img src="background.jpg">';
     showControls();
     userwins = 0;
     botwins = 0;

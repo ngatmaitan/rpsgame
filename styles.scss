@@ -27,6 +27,12 @@ h2{
 	.instructions{
 		text-align: left;
 		line-height: 20px;
+		@media (min-width: 540px){
+			padding: 0 6em;
+		}
+		@media (min-width: 1024px){
+			padding: 0 20em;
+		}
 	}
 }
 
@@ -82,10 +88,26 @@ h2{
 	table{
 		margin-left: 30px;
 		margin-top: -8px;
+		tr{
+			img{
+				width: 60px;
+				height: 70px;
+			}
+		}
+		@media (min-width: 480px){
+			margin-left: 8em;
+		}
+		@media (min-width: 540px){
+			margin-left: 10em;
+		}
+		@media (min-width: 1024px){
+			margin-left: 23em;
+		}
 	}
 }
 
 .gamebuttons{
+	text-align: center;
 	button{
 		width: 60px;
 		height: 70px;
@@ -114,11 +136,26 @@ h2{
 	}
 	table{
 		margin-left: 10px;
+		@media (min-width: 480px){
+			margin-left: 7em;
+		}
+		@media (min-width: 540px){
+			margin-left: 9em;
+		}
+		@media (min-width: 1024px){
+			margin-left: 23em;
+		}
 	}
 }
 
 table{
 	width: 88vw;
+	@media (min-width: 480px){
+		width: 49vw;
+	}
+	@media (min-width: 1024px){
+		width: 28vw;
+	}
 }
 
 .winner{

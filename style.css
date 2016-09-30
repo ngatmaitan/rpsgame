@@ -19,6 +19,12 @@ h2 {
   .header .instructions {
     text-align: left;
     line-height: 20px; }
+    @media (min-width: 540px) {
+      .header .instructions {
+        padding: 0 6em; } }
+    @media (min-width: 1024px) {
+      .header .instructions {
+        padding: 0 20em; } }
 
 .timer {
   text-align: center; }
@@ -56,20 +62,34 @@ h2 {
 #choices table {
   margin-left: 30px;
   margin-top: -8px; }
+  #choices table tr img {
+    width: 60px;
+    height: 70px; }
+  @media (min-width: 480px) {
+    #choices table {
+      margin-left: 8em; } }
+  @media (min-width: 540px) {
+    #choices table {
+      margin-left: 10em; } }
+  @media (min-width: 1024px) {
+    #choices table {
+      margin-left: 23em; } }
 
-.gamebuttons button {
-  width: 60px;
-  height: 70px;
-  background-size: 60px 70px;
-  background-color: transparent;
-  border: none;
-  margin-left: 30px; }
-.gamebuttons #rock {
-  background-image: url(rock.png); }
-.gamebuttons #paper {
-  background-image: url(paper.png); }
-.gamebuttons #scissors {
-  background-image: url(scissors.png); }
+.gamebuttons {
+  text-align: center; }
+  .gamebuttons button {
+    width: 60px;
+    height: 70px;
+    background-size: 60px 70px;
+    background-color: transparent;
+    border: none;
+    margin-left: 30px; }
+  .gamebuttons #rock {
+    background-image: url(rock.png); }
+  .gamebuttons #paper {
+    background-image: url(paper.png); }
+  .gamebuttons #scissors {
+    background-image: url(scissors.png); }
 
 #score {
   text-align: center; }
@@ -79,9 +99,24 @@ h2 {
     margin-top: -12px; }
   #score table {
     margin-left: 10px; }
+    @media (min-width: 480px) {
+      #score table {
+        margin-left: 7em; } }
+    @media (min-width: 540px) {
+      #score table {
+        margin-left: 9em; } }
+    @media (min-width: 1024px) {
+      #score table {
+        margin-left: 23em; } }
 
 table {
   width: 88vw; }
+  @media (min-width: 480px) {
+    table {
+      width: 49vw; } }
+  @media (min-width: 1024px) {
+    table {
+      width: 28vw; } }
 
 .winner {
   margin-top: 1em; }
