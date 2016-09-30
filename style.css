@@ -7,11 +7,12 @@ body {
 
 h1 {
   font-family: Amatic SC, cursive;
-  font-size: 3em; }
-  @media (min-width: 540) {
+  font-size: 3em;
+  margin-bottom: 0; }
+  @media only screen and (min-width: 540px) {
     h1 {
       font-size: 4em; } }
-  @media (min-width: 1280) {
+  @media only screen and (min-width: 1280px) {
     h1 {
       font-size: 5em; } }
 
@@ -20,7 +21,7 @@ h2 {
   font-size: 2em;
   margin-top: 0;
   margin-bottom: 0; }
-  @media (min-width: 1024px) {
+  @media only screen and (min-width: 1024px) {
     h2 {
       font-size: 3em; } }
 
@@ -29,28 +30,28 @@ h2 {
   .header .instructions {
     text-align: left;
     line-height: 20px; }
-    @media (min-width: 480px) {
+    @media only screen and (min-width: 480px) {
       .header .instructions {
         padding: 0 5em; } }
-    @media (min-width: 540px) {
+    @media only screen and (min-width: 540px) {
       .header .instructions {
         padding: 0 6em; } }
-    @media (min-width: 1024px) {
+    @media only screen and (min-width: 1024px) {
       .header .instructions {
         padding: 0 20em; } }
-    @media (min-width: 1280px) {
+    @media only screen and (min-width: 1280px) {
       .header .instructions {
         padding: 0 24em; } }
-    @media (min-width: 1440px) {
+    @media only screen and (min-width: 1440px) {
       .header .instructions {
         padding: 0 31em; } }
-    @media (min-width: 1600px) {
+    @media only screen and (min-width: 1600px) {
       .header .instructions {
         padding: 0 35em; } }
-    @media (min-width: 1680px) {
+    @media only screen and (min-width: 1680px) {
       .header .instructions {
         padding: 0 39em; } }
-    @media (min-width: 1920px) {
+    @media only screen and (min-width: 1920px) {
       .header .instructions {
         padding: 0 44em; } }
 
@@ -93,32 +94,32 @@ h2 {
   #choices table tr img {
     width: 60px;
     height: 70px; }
-    @media (min-width: 1024px) {
+    @media only screen and (min-width: 1024px) {
       #choices table tr img {
         width: 100px;
         height: 100px; } }
-  @media (min-width: 480px) {
+  @media only screen and (min-width: 480px) {
     #choices table {
       margin-left: 8em; } }
-  @media (min-width: 540px) {
+  @media only screen and (min-width: 540px) {
     #choices table {
       margin-left: 10em; } }
-  @media (min-width: 1024px) {
+  @media only screen and (min-width: 1024px) {
     #choices table {
       margin-left: 23em; } }
-  @media (min-width: 1280px) {
+  @media only screen and (min-width: 1280px) {
     #choices table {
       margin-left: 30em; } }
-  @media (min-width: 1440px) {
+  @media only screen and (min-width: 1440px) {
     #choices table {
       margin-left: 35em; } }
-  @media (min-width: 1600px) {
+  @media only screen and (min-width: 1600px) {
     #choices table {
       margin-left: 40em; } }
-  @media (min-width: 1680px) {
+  @media only screen and (min-width: 1680px) {
     #choices table {
       margin-left: 43em; } }
-  @media (min-width: 1920px) {
+  @media only screen and (min-width: 1920px) {
     #choices table {
       margin-left: 49em; } }
 
@@ -131,7 +132,7 @@ h2 {
     background-color: transparent;
     border: none;
     margin-left: 30px; }
-    @media (min-width: 1024px) {
+    @media only screen and (min-width: 1024px) {
       .gamebuttons button {
         width: 100px;
         height: 100px;
@@ -151,40 +152,40 @@ h2 {
     margin-top: -12px; }
   #score table {
     margin-left: 10px; }
-    @media (min-width: 480px) {
+    @media only screen and (min-width: 480px) {
       #score table {
         margin-left: 7em; } }
-    @media (min-width: 540px) {
+    @media only screen and (min-width: 540px) {
       #score table {
         margin-left: 9em; } }
-    @media (min-width: 1024px) {
+    @media only screen and (min-width: 1024px) {
       #score table {
         margin-left: 23em; } }
-    @media (min-width: 1280px) {
+    @media only screen and (min-width: 1280px) {
       #score table {
         margin-left: 29em; } }
-    @media (min-width: 1440px) {
+    @media only screen and (min-width: 1440px) {
       #score table {
         margin-left: 34em; } }
-    @media (min-width: 1600px) {
+    @media only screen and (min-width: 1600px) {
       #score table {
         margin-left: 39em; } }
-    @media (min-width: 1680px) {
+    @media only screen and (min-width: 1680px) {
       #score table {
         margin-left: 41em; } }
-    @media (min-width: 1920px) {
+    @media only screen and (min-width: 1920px) {
       #score table {
         margin-left: 49em; } }
 
 table {
   width: 83vw; }
-  @media (min-width: 480px) {
+  @media only screen and (min-width: 480px) {
     table {
       width: 49vw; } }
-  @media (min-width: 1024px) {
+  @media only screen and (min-width: 1024px) {
     table {
       width: 28vw; } }
-  @media (min-width: 1280px) {
+  @media only screen and (min-width: 1280px) {
     table {
       width: 21em; } }
 

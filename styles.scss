@@ -13,10 +13,11 @@ body{
 h1{
 	font-family: $amatic-sc;
 	font-size: 3em;
-	@media(min-width: 540){
+	margin-bottom: 0;
+	@media only screen and (min-width: 540px){
 		font-size: 4em;
 	}
-	@media(min-width: 1280){
+	@media only screen and (min-width: 1280px){
 		font-size: 5em;
 	}
 }
@@ -26,7 +27,7 @@ h2{
 	font-size: 2em;
 	margin-top: 0;
 	margin-bottom: 0;
-	@media (min-width: 1024px){
+	@media only screen and (min-width: 1024px){
 		font-size: 3em;
 	}
 }
@@ -37,28 +38,28 @@ h2{
 	.instructions{
 		text-align: left;
 		line-height: 20px;
-		@media (min-width: 480px){
+		@media only screen and (min-width: 480px){
 			padding: 0 5em;
 		}
-		@media (min-width: 540px){
+		@media only screen and (min-width: 540px){
 			padding: 0 6em;
 		}
-		@media (min-width: 1024px){
+		@media only screen and (min-width: 1024px){
 			padding: 0 20em;
 		}
-		@media (min-width: 1280px){
+		@media only screen and (min-width: 1280px){
 			padding: 0 24em;
 		}
-		@media (min-width: 1440px){
+		@media only screen and (min-width: 1440px){
 			padding: 0 31em;
 		}
-		@media (min-width: 1600px){
+		@media only screen and (min-width: 1600px){
 			padding: 0 35em;
 		}
-		@media (min-width: 1680px){
+		@media only screen and (min-width: 1680px){
 			padding: 0 39em;
 		}
-		@media (min-width: 1920px){
+		@media only screen and (min-width: 1920px){
 			padding: 0 44em;
 		}
 	}
@@ -120,34 +121,34 @@ h2{
 			img{
 				width: 60px;
 				height: 70px;
-				@media (min-width: 1024px){
+				@media only screen and (min-width: 1024px){
 					width: 100px;
 					height: 100px;
 				}
 			}
 		}
-		@media (min-width: 480px){
+		@media only screen and (min-width: 480px){
 			margin-left: 8em;
 		}
-		@media (min-width: 540px){
+		@media only screen and (min-width: 540px){
 			margin-left: 10em;
 		}
-		@media (min-width: 1024px){
+		@media only screen and (min-width: 1024px){
 			margin-left: 23em;
 		}
-		@media (min-width: 1280px){
+		@media only screen and (min-width: 1280px){
 			margin-left: 30em;
 		}
-		@media (min-width: 1440px){
+		@media only screen and (min-width: 1440px){
 			margin-left: 35em;
 		}
-		@media (min-width: 1600px){
+		@media only screen and (min-width: 1600px){
 			margin-left: 40em;
 		}
-		@media (min-width: 1680px){
+		@media only screen and (min-width: 1680px){
 			margin-left: 43em;
 		}
-		@media (min-width: 1920px){
+		@media only screen and (min-width: 1920px){
 			margin-left: 49em;
 		}
 	}
@@ -162,7 +163,7 @@ h2{
 		background-color: transparent;
 		border: none;
 		margin-left: 30px;
-		@media (min-width: 1024px){
+		@media only screen and (min-width: 1024px){
 			width: 100px;
 			height: 100px;
 			background-size: 100px 100px;
@@ -188,28 +189,28 @@ h2{
 	}
 	table{
 		margin-left: 10px;
-		@media (min-width: 480px){
+		@media only screen and (min-width: 480px){
 			margin-left: 7em;
 		}
-		@media (min-width: 540px){
+		@media only screen and (min-width: 540px){
 			margin-left: 9em;
 		}
-		@media (min-width: 1024px){
+		@media only screen and (min-width: 1024px){
 			margin-left: 23em;
 		}
-		@media (min-width: 1280px){
+		@media only screen and (min-width: 1280px){
 			margin-left: 29em;
 		}
-		@media (min-width: 1440px){
+		@media only screen and (min-width: 1440px){
 			margin-left: 34em;
 		}
-		@media (min-width: 1600px){
+		@media only screen and (min-width: 1600px){
 			margin-left: 39em;
 		}
-		@media (min-width: 1680px){
+		@media only screen and (min-width: 1680px){
 			margin-left: 41em;
 		}
-		@media (min-width: 1920px){
+		@media only screen and (min-width: 1920px){
 			margin-left: 49em;
 		}
 	}
@@ -217,13 +218,13 @@ h2{
 
 table{
 	width: 83vw;
-	@media (min-width: 480px){
+	@media only screen and (min-width: 480px){
 		width: 49vw;
 	}
-	@media (min-width: 1024px){
+	@media only screen and (min-width: 1024px){
 		width: 28vw;
 	}
-	@media (min-width: 1280px){
+	@media only screen and (min-width: 1280px){
 		width: 21em;
 	}
 }
